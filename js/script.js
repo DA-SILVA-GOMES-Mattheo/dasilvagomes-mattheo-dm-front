@@ -11,7 +11,7 @@ element2.classList.add("element5");
 document.getElementById("conteneur").appendChild(element2);
 console.log(document.getElementById("conteneur").innerHTML);
 
-localStorage.setItem('Personne', 'DA SILVA GOMES Matthéo');
+localStorage.setItem('Personne', 'DA-SILVA-GOMES Matthéo');
 
 localStorage.getItem('Personne');
 
