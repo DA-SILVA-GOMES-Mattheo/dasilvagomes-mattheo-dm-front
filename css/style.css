@@ -4,7 +4,7 @@
     border: solid black 2px;
     padding: 50px;
     border-radius: 10px;
-    width: 25%;
+    width: 50%;
 }
 
 .element1 {
@@ -21,6 +21,18 @@
 
 .element3 {
     border: solid green 2px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.element4 {
+    border: solid purple 2px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.element5 {
+    border: solid yellow 2px;
     padding: 25px;
     border-radius: 10px;
 }
