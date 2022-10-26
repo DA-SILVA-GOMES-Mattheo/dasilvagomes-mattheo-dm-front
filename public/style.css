@@ -1,0 +1,28 @@
+body {
+    background-image: linear-gradient(to right bottom, #fff5ff, #fbdffb, #f5c8f8, #efb2f4,
+            #e89bf0, #e28aed, #dc79e9, #d567e6, #cf56e3, #c944df, #c32ddc, #bc00d8);
+}
+
+#MesTitres>h1 {
+    color: white;
+    font-family: "Roundy Rainbows", sans-serif;
+    font-size: 9vw;
+    justify-content: center;
+}
+
+#MesTitres>h2 {
+    color: white;
+    font-family: "Roundy Rainbows", sans-serif;
+    font-size: 6vw;
+    justify-content: center;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+}
+
+header>img {
+    height: 50px;
+    width: 50px;
+}
