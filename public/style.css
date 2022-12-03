@@ -19,16 +19,95 @@ body {
     padding-left: 25%;
 }
 
-#Sommaire {
+#Paragraphe2 {
     padding-top: 10%;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
-#Paragraphe2>div>h1 {
+#Paragraphe2>h1 {
     color: white;
     font-family: "Fredoka", sans-serif;
     font-size: 3vw;
     justify-content: center;
     padding-left: 15%;
+}
+
+.T1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.T2 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.T3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.T4 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+#Paragraphe2>#I1 {
+    height: 0px;
+    width: 0px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#Paragraphe3 {
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    text-align: center;
+    font-size: 1vw;
+    padding-top: 10%;
+}
+
+#Paragraphe3>div>h1 {
+    text-align: center;
+    font-family: "Roundy Rainbows", sans-serif;
+    font-size: 3vw;
+}
+
+#ImagesP3>img:first-child {
+    height: 300px;
+    width: 450px;
+}
+
+#ImagesP3>button {
+    font-family: "Fredoka", sans-serif;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    background-color: #F5C558;
+    color: #C520ED;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#ImagesP3>img:nth-child(3) {
+    height: 500px;
+    width: 400px;
 }
 
 header {
@@ -46,12 +125,3 @@ header>div>img {
     width: 25px;
     height: 25px;
 }
-
- {
-    border: 1px solid black;
-    background-color: lightblue;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
-  }
