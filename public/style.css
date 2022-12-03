@@ -8,6 +8,7 @@ body {
     font-family: "Roundy Rainbows", sans-serif;
     font-size: 9vw;
     justify-content: center;
+    padding-left: 15%;
 }
 
 #MesTitres>h2 {
@@ -15,6 +16,19 @@ body {
     font-family: "Roundy Rainbows", sans-serif;
     font-size: 6vw;
     justify-content: center;
+    padding-left: 25%;
+}
+
+#Sommaire {
+    padding-top: 10%;
+}
+
+#Paragraphe2>div>h1 {
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    font-size: 3vw;
+    justify-content: center;
+    padding-left: 15%;
 }
 
 header {
@@ -27,3 +41,17 @@ header>img {
     height: 50px;
     width: 50px;
 }
+
+header>div>img {
+    width: 25px;
+    height: 25px;
+}
+
+ {
+    border: 1px solid black;
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  }
