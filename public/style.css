@@ -11,12 +11,22 @@ body {
     padding-left: 15%;
 }
 
+#MesTitres>h1:hover {
+    color: #C520ED;
+    cursor: pointer;
+}
+
 #MesTitres>h2 {
     color: white;
     font-family: "Roundy Rainbows", sans-serif;
     font-size: 6vw;
     justify-content: center;
     padding-left: 25%;
+}
+
+#MesTitres>h2:hover {
+    color: #F5C558;
+    cursor: pointer;
 }
 
 #Paragraphe2 {
@@ -60,6 +70,107 @@ body {
     grid-row-start: 4;
     grid-row-end: 4;
 }
+
+#Paragraphe4 {
+    padding-top: 10%;
+}
+
+#Paragraphe4>h1 {
+    color: white;
+    font-family: "Roundy Rainbows", sans-serif;
+    font-size: 5vw;
+    justify-content: center;
+    padding-left: 15%;
+}
+
+#Paragraphe4>div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 25px;
+    justify-content: center;
+}
+
+#Paragraphe4>div>button {
+    border-radius: 50px;
+}
+
+#Paragraphe4>div>button>img {
+    border-radius: 50px;
+}
+
+#Paragraphe4>img {
+    display: block;
+    height: 100px;
+    width: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin: auto;
+}
+
+.P4I1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.P4I2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.P4I3 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.P4I4 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.P4I5 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.P4I6 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.P4I7 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.P4I8 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.P4I9 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
 
 #Paragraphe2>#I1 {
     height: 0px;
@@ -110,18 +221,28 @@ body {
     width: 400px;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
+.Header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Header>div>a {
+    width: 100px;
+    margin-left: 25vw;
+    font-family: "Inter", sans-serif;
+    font-size: 1vw;
     color: white;
 }
 
-header>img {
-    height: 50px;
-    width: 50px;
+.Header>div>a:hover {
+    color: #C520ED;
 }
 
-header>div>img {
-    width: 25px;
-    height: 25px;
+header>div>div>img {
+    height: 100px;
+    width: 100px;
+}
+
+footer {
+    background-color: white;
 }
