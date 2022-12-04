@@ -43,6 +43,11 @@ body {
     padding-left: 15%;
 }
 
+#Paragraphe2>h1:hover {
+    color: #C520ED;
+    cursor: pointer;
+}
+
 .T1 {
     grid-column-start: 1;
     grid-column-end: 1;
@@ -86,12 +91,19 @@ body {
 #Paragraphe4>div {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 25px;
+    grid-gap: 100px;
     justify-content: center;
 }
 
 #Paragraphe4>div>button {
     border-radius: 50px;
+    transition: transform .2s;
+}
+
+#Paragraphe4>div>button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #C520ED;
 }
 
 #Paragraphe4>div>button>img {
@@ -106,6 +118,12 @@ body {
     padding-bottom: 50px;
     text-align: center;
     margin: auto;
+    transition: transform 1s;
+}
+
+#Paragraphe4>img:hover {
+    cursor: pointer;
+    transform: scale(1.5);
 }
 
 .P4I1 {
