@@ -1,3 +1,5 @@
+/* CSS pour la page Index */
+
 body {
     background-image: linear-gradient(to right bottom, #fff5ff, #fbdffb, #f5c8f8, #efb2f4,
             #e89bf0, #e28aed, #dc79e9, #d567e6, #cf56e3, #c944df, #c32ddc, #bc00d8);
@@ -9,11 +11,13 @@ body {
     font-size: 9vw;
     justify-content: center;
     padding-left: 15%;
+    transition: transform 1s;
 }
 
 #MesTitres>h1:hover {
     color: #C520ED;
     cursor: pointer;
+    transform: scale(1.08);
 }
 
 #MesTitres>h2 {
@@ -22,11 +26,13 @@ body {
     font-size: 6vw;
     justify-content: center;
     padding-left: 25%;
+    transition: transform 0.8s;
 }
 
 #MesTitres>h2:hover {
-    color: #F5C558;
+    color: #C520ED;
     cursor: pointer;
+    transform: scale(1.05);
 }
 
 #Paragraphe2 {
@@ -95,18 +101,18 @@ body {
     justify-content: center;
 }
 
-#Paragraphe4>div>button {
+#Paragraphe4>div>a {
     border-radius: 50px;
     transition: transform .2s;
 }
 
-#Paragraphe4>div>button:hover {
+#Paragraphe4>div>a:hover {
     cursor: pointer;
     transform: scale(1.1);
     background-color: #C520ED;
 }
 
-#Paragraphe4>div>button>img {
+#Paragraphe4>div>a>img {
     border-radius: 50px;
 }
 
@@ -191,12 +197,14 @@ body {
 
 
 #Paragraphe2>#I1 {
-    height: 0px;
-    width: 0px;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row-end: 4;
+}
+
+#Paragraphe2>#I1>img {
+    width: 900px;
 }
 
 #Paragraphe3 {
@@ -214,8 +222,7 @@ body {
 }
 
 #ImagesP3>img:first-child {
-    height: 300px;
-    width: 450px;
+    width: 500px;
 }
 
 #ImagesP3>button {
@@ -235,7 +242,6 @@ body {
 }
 
 #ImagesP3>img:nth-child(3) {
-    height: 500px;
     width: 400px;
 }
 
@@ -263,4 +269,104 @@ header>div>div>img {
 
 footer {
     background-color: white;
+    /*padding-top: 50px;
+    padding-bottom: 50px;*/
+    margin: 0px;
+}
+
+/* CSS pour la page Produit Hoodie Crème */
+
+#WBNoirPage {
+    /*display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;*/
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-right: 200px;
+    display: flex;
+}
+
+#WBI1 {
+    text-align: start;
+    /*width: 50%;*/
+    margin: 20px;
+    /*grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;*/
+    flex-direction: column;
+}
+
+.WBGroupe {
+    flex-direction: column;
+}
+
+#WBNoirPage>div>img {
+    border-radius: 50px;
+}
+
+#WBButton {
+    /*grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;*/
+    flex-direction: row;
+}
+
+#WBNoirPage>div>div>button {
+    font-family: "Fredoka", sans-serif;
+    /*text-align: end;*/
+    border: none;
+    border-radius: 50px;
+    background-color: #F5C558;
+    color: #C520ED;
+    padding: 15px 32px;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 25px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+#WBNoirPage>div>div>button:nth-child(2) {
+    background-color: white;
+}
+
+/*#WBNoirPage>h1,h2,h3 {
+    text-align: end;
+    width: 100px;
+    margin: 20px;
+}*/
+
+#WBNoirPage>div>h1 {
+    /*grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;*/
+    text-align: end;
+}
+
+#WBNoirPage>div>h2 {
+    /*grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;*/
+    text-align: end;
+}
+
+#WBNoirPage>div>h3 {
+    /*grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;*/
+    text-align: end;
+}
+
+.WBP {
+    /*grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;*/
+    text-align: start;
+    flex-direction: row-reverse;
 }
