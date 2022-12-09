@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /* CSS pour la page Index */
 
 body {
@@ -299,15 +303,15 @@ a.menu:hover {
 }
 
 .footer-content-right {
-  padding-right:40px;
-  margin-top:20px;
-  float:right;
+    padding-right: 40px;
+    margin-top: 20px;
+    float: right;
 }
 
 .icon-style {
-  height:40px;
-  margin-left:20px;
-  margin-top:5px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
 .icon-style:active {
@@ -332,31 +336,62 @@ a.menu:hover {
 
 
 
-/* CSS pour la page Produit Hoodie Crème */
+/* CSS pour la page Produit WindBreaker Noir */
 
 #WBNoirPage {
-    /*display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto auto auto;*/
-    margin-left: 200px;
-    margin-top: 100px;
-    margin-right: 200px;
     display: flex;
+    max-width: 1300px;
+    margin: auto;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+@media(max-width:992px) {
+    #WBI1 {
+        width: 100%
+    }
+
+    .WBGroupe {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    #WBNoirPage {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 #WBI1 {
     text-align: start;
-    /*width: 50%;*/
+    width: 50%;
     margin: 20px;
-    /*grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 3;*/
     flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.WBP {
+    text-align: start;
+    /*width: 50%;*/
+    margin: 10px;
+    flex-direction: column-reverse;
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-family: "Fredoka", 'medium';
+    font-size: 1vw;
 }
 
 .WBGroupe {
     flex-direction: column;
+    width: 50%;
+    display: flex;
+    align-content: flex-end;
+    font-family: "Fredoka", 'medium';
+    color: white;
 }
 
 #WBNoirPage>div>img {
@@ -364,14 +399,26 @@ a.menu:hover {
 }
 
 #WBButton {
-    /*grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;*/
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
 }
 
-#WBNoirPage>div>div>button {
+#WBNoirPage>div>div>div>button {
+    font-family: "Fredoka", sans-serif;
+    border: none;
+    border-radius: 50px;
+    background-color: #F5C558;
+    color: #C520ED;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 10px 10px;
+}
+
+#WBButton>button {
     font-family: "Fredoka", sans-serif;
     /*text-align: end;*/
     border: none;
@@ -386,47 +433,26 @@ a.menu:hover {
     cursor: pointer;
 }
 
-#WBNoirPage>div>div>button:nth-child(2) {
+#WBNoirPage>div>div>div>button:nth-child(2) {
     background-color: white;
 }
 
-/*#WBNoirPage>h1,h2,h3 {
-    text-align: end;
-    width: 100px;
-    margin: 20px;
-}*/
-
 #WBNoirPage>div>h1 {
-    /*grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;*/
+    font-size: 4vw;
     text-align: end;
+    font-family: "Fredoka", 'medium';
 }
 
 #WBNoirPage>div>h2 {
-    /*grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;*/
+    font-size: 3vw;
     text-align: end;
+    font-family: "Fredoka", 'medium';
 }
 
 #WBNoirPage>div>h3 {
-    /*grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;*/
+    font-size: 2vw;
     text-align: end;
-}
-
-.WBP {
-    /*grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;*/
-    text-align: start;
-    flex-direction: row-reverse;
+    font-family: "Fredoka", 'medium';
 }
 
 
@@ -465,6 +491,8 @@ a.menu:hover {
     background-color: transparent;
     border-radius: 15px;
     text-align: center;
+    color: white;
+    font-family: "Fredoka", sans-serif;
 }
 
 .ContactButtonClass {
