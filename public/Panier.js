@@ -25,15 +25,37 @@ function addPanier(produit) {
 
 function supprimerDuPanier(produit) {
     let panier = getPanier();
-    panier = panier.filter(p => p.id !== produit.id);
+    panier = panier.filter(p => p.id != produit.id);
     savePanier(panier);
 }
 
 function changeQuantity(produit, quantity) {
     let panier = getPanier();
-    panier = panier.filter(p => p.id !== produit.id);
+    let produitTrouve = panier.find(p => p.id == produit.id);
     if (produitTrouve != undefined) {
         produitTrouve.quantity += quantity;
+        if (produitTrouve.quantity <= 0) {
+            supprimerDuPanier(produitTrouve);
+        } else {
+            savePanier(panier);
+        }
     }
-    savePanier(panier);
+}
+
+function getNombreProduit(){
+    let panier = getPanier();
+    let nombre = 0;
+    for(let produit of panier){
+        nombre += produit.quantity;
+    }
+    return nombre;
+}
+
+function getPrixTotal(){
+    let panier = getPanier();
+    let total = 0;
+    for(let produit of panier){
+        total += produit.quantity * produit.prix;
+    }
+    return total;
 }
