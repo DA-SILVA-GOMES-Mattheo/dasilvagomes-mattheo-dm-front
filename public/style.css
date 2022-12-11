@@ -554,15 +554,6 @@ a.menu:hover {
     align-items: stretch;
 }
 
-.panier>a {
-    /*height: 100px;
-    width: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    margin: auto;*/
-}
-
 .panier>a>img {
     border-radius: 125px;
     /*height: 100px;
