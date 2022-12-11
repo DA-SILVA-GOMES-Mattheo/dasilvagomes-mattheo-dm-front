@@ -281,6 +281,12 @@ header>div>div>img {
     font-family: "Fredoka";
 }
 
+.footer-text-left>a {
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .footer-text-left {
     font-size: 25px;
     padding-left: 100px;
@@ -433,8 +439,18 @@ a.menu:hover {
     cursor: pointer;
 }
 
-#WBNoirPage>div>div>div>button:nth-child(2) {
+#WBNoirPage>div>div>div>input {
     background-color: white;
+    font-family: "Fredoka", sans-serif;
+    /*text-align: end;*/
+    border: none;
+    border-radius: 50px;
+    color: #C520ED;
+    padding: 15px 32px;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 25px;
+    cursor: pointer;
 }
 
 #WBNoirPage>div>h1 {
@@ -522,3 +538,10 @@ a.menu:hover {
     font-size: 1vw;
     font-family: "Fredoka", sans-serif;
 }
+
+
+
+
+
+
+

@@ -42,20 +42,57 @@ function changeQuantity(produit, quantity) {
     }
 }
 
-function getNombreProduit(){
+function getNombreProduit() {
     let panier = getPanier();
     let nombre = 0;
-    for(let produit of panier){
+    for (let produit of panier) {
         nombre += produit.quantity;
     }
     return nombre;
 }
 
-function getPrixTotal(){
+function getPrixTotal() {
     let panier = getPanier();
     let total = 0;
-    for(let produit of panier){
+    for (let produit of panier) {
         total += produit.quantity * produit.prix;
     }
     return total;
 }
+
+
+
+
+
+
+
+
+//buttons temps réel
+
+const plus = document.querySelector(".plus"),
+    num = document.querySelector(".num"),
+    moins = document.querySelector(".moins");
+
+let a = 0;
+
+plus.addEventListener("click", () => {
+
+    a++;
+
+    a = (a < 10) ? "0" + a : a;
+
+    num.value = a;
+
+});
+
+moins.addEventListener("click", () => {
+
+    if (a > 0) {
+
+        a--;
+
+        a = (a < 10) ? "0" + a : a;
+
+        num.value = a;
+    }
+});
