@@ -543,5 +543,40 @@ a.menu:hover {
 
 
 
+/* Page Panier */
 
+.panier {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
+}
 
+.panier>a {
+    /*height: 100px;
+    width: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin: auto;*/
+}
+
+.panier>a>img {
+    border-radius: 125px;
+    /*height: 100px;
+    width: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin: auto;*/
+    transition: transform 1s;
+    padding: 70px;
+
+}
+
+.panier>a>img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

@@ -96,3 +96,8 @@ moins.addEventListener("click", () => {
         num.value = a;
     }
 });
+
+//num.addEventListener("click", () => {
+
+//});
+//document.querySelector('.num').value
